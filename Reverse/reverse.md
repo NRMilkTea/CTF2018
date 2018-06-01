@@ -2,7 +2,7 @@
 
 ## C語言程式編譯與逆向
 
-> code:
+#### code:
 ```c
 #include <stdio.h>
 
@@ -34,10 +34,34 @@ int max(int num1, int num2)
 }
 ```
 
-> 預處理階段:
+---
+### 預處理階段:
 
 `
 gcc -E getMax.c -o getMax.i
 `
 
-[getMax.i]()
+[getMax.i](/Reverse/getMax.i)
+
+---
+### 編譯階段
+
+`
+gcc –S getMax.i –o getMax.s
+`
+
+[getMax.s](/Reverse/getMax.s)
+
+---
+### 組譯階段
+
+`
+gcc -c getMax.s -o getMax.o
+`
+
+---
+### 連結階段
+
+`
+gcc getMax.o -o getMax
+`
