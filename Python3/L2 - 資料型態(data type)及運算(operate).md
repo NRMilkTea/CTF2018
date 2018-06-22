@@ -3,9 +3,8 @@
 ### Data Types 一般資料型別
 > 1. `bool` 布林，分為 True、False 通常用於條件判斷
 > 2. `integer` 整數，例如： 10、999999
-> 3. `float` 浮點數，係指有小數點的整數：1.222、1.0e7 等同於 10 的 7 次方  
-> 4. `complex` 複數，由實數部分和虛數部分構成，可以用a + bj,或者complex(a,b)表示，複數的實部a和虛部b都是浮點型
-> 5. `string` 字串，一串文字字元
+> 3. `float` 浮點數，係指有小數點的整數：1.222、1.0e7 等同於 10 的 7 次方 
+> 4. `string` 字串，一串文字字元
 
 ### Collection Data Types 組合類型資料型態 
 > 1. `list` 串列，用於儲存一系列序列資料（可以儲存不同資料型別），類似於其他程式語言的陣列但更為強大
@@ -21,16 +20,22 @@
 > 5. 成員運算子 Membership Operators 
 
 ### Numbers 數字
+
+`/`  回傳a除以b的結果，以浮點數表示
+`//` 回傳a除以b的整數部分，型態隨a,b而變
+`%`  回傳a除以b的餘數，型態隨a,b而變
+`**` 回傳a的b次方
 ```
 #!/usr/bin/env python
 
-a = 7
-b = 5
+a = 5
+b = 2
 
-print("a + b =", a+b)    # a + b = 12
-print("a - b =", a-b)    # a - b = 2
-print("a * b =", a*b)    # a * b = 35
-print("a / b =", a/b)    # a / b = 1.4
-print("a // b =", a//b)  # a // b = 1
-print("a % b =", a%b)    # a % b = 2
+print("a + b =", a+b)    # 5 + 2 = 7
+print("a - b =", a-b)    # 5 - 2 = 3
+print("a * b =", a*b)    # 5 * 2 = 10
+print("a / b =", a/b)    # 5 / 2 = 2.5
+print("a // b =", a//b)  # 5 // 2 = 2
+print("a % b =", a%b)    # 5 % 2 = 1
+print("a ** b =", a**b)  # 5 ** 2 = 25
 ```
